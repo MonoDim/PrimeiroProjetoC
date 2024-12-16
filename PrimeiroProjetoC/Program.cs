@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Ouvindo Musga
+string mensagemDeBoasVindas = "Seja bem vindo ao Ouvindo Musga";
+Console.WriteLine(mensagemDeBoasVindas);

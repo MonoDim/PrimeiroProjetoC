@@ -117,7 +117,12 @@ void AvaliarBandasRegistradas()
     string nomeDaBanda = Console.ReadLine()!;
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
-        
+        Console.WriteLine($"Qual a nota que você vai dar para {nomeDaBanda}: ");
+        int nota = int.Parse(Console.ReadLine()!);
+        bandasRegistradas[nomeDaBanda].Add(nota);
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}.");
+        Thread.Sleep(2000);
+        ExibirItensMenu();
     }
     else
     {
